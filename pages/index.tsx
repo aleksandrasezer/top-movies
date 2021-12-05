@@ -7,8 +7,8 @@ const Home: NextPage = () => {
     <Layout>
       <h1>Main page</h1>
         menu:
-        <Link href='/comedies'><h2>Comedies</h2></Link>
-        <Link href='/top-movies'><h2>Top movies</h2></Link>
+        <Link href='/comedies' passHref><h2>Comedies</h2></Link>
+        <Link href='/top-movies' passHref><h2>Top movies</h2></Link>
     </Layout>
   )
 }
