@@ -1,14 +1,15 @@
 import type { NextPage } from 'next'
 import Link from 'next/link'
+import {Layout} from "../components/layout/Layout";
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <Layout>
       <h1>Main page</h1>
         menu:
-        <Link href='/all-movies'><h2>All movies</h2></Link>
+        <Link href='/comedies'><h2>Comedies</h2></Link>
         <Link href='/top-movies'><h2>Top movies</h2></Link>
-    </div>
+    </Layout>
   )
 }
 

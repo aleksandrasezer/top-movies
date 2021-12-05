@@ -1,0 +1,10 @@
+.navContainer {
+    height: 70px;
+    background-color: darkred;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.navContainer> * {
+    cursor: pointer;
+}
