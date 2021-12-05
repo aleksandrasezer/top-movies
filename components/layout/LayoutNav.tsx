@@ -1,4 +1,4 @@
-import s from './LayoutNav.module.css'
+import s from '../../styles/LayoutNav.module.css'
 import Link from "next/link";
 
 export const LayoutNav = () => {

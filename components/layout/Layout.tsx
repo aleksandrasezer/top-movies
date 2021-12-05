@@ -1,10 +1,11 @@
 import {LayoutNav} from "./LayoutNav";
 import Head from "next/head";
-import s from './Layout.module.css'
+import s from '../../styles/Layout.module.css'
+import {Footer} from "./Footer";
 
 export const Layout = ({title, description, keywords, children}: LayoutPropsType) => {
     return(
-        <>
+        <div className={s.layout}>
             <Head>
                 <title>{title}</title>
                 <meta name='description' content={description}/>
@@ -12,7 +13,8 @@ export const Layout = ({title, description, keywords, children}: LayoutPropsType
             </Head>
             <LayoutNav />
             <div className={s.content}>{children}</div>
-        </>
+            <Footer />
+        </div>
     )
 }
 
